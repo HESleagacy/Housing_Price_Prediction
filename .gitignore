@@ -113,3 +113,9 @@ dmypy.json
 # Profiling
 .prof
 
+__pycache__
+*.pyc
+model/
+datasets/
+.DS_Store
+
