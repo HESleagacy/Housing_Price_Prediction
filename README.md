@@ -1,57 +1,46 @@
 # HESlegacy – California Housing Price Prediction API
 
-**Model_finished**  
-**CombinedAttributesAdder INCLUDED**  
-**Production-Ready FastAPI**  
-**Zero Pickle Errors**  
-**Deployed in 2 minutes**
+A **production-ready FastAPI service** for predicting California housing prices using a tuned machine learning model.  
+Built to run cleanly, predict reliably, and start without drama.
 
 ---
 
-### Winner Model Stats
+## ✅ Project Highlights
+- **Model fully trained and finalized**
+- **CombinedAttributesAdder included in pipeline**
+- **FastAPI-ready for production**
+- **Zero pickle / serialization issues**
+- **Deployable in under 2 minutes**
+
+No hacks. No “works on my machine” nonsense.
+
+---
+
+## 🏆 Model Performance
 - **Algorithm**: RandomForestRegressor (GridSearchCV tuned)
-- **Best Params**: `n_estimators=30`, `max_features=8`
-- **Test RMSE**: ~48,000 USD
-- **95% Confidence**: ± $3,800
-- **Custom Features**: `rooms_per_household`, `population_per_household`, `bedrooms_per_room`
+- **Best Parameters**:
+  - `n_estimators = 30`
+  - `max_features = 8`
+- **Test RMSE**: ≈ **$48,000**
+- **95% Confidence Interval**: ± **$3,800**
+- **Engineered Features**:
+  - `rooms_per_household`
+  - `population_per_household`
+  - `bedrooms_per_room`
 
 ---
 
-This work draws inspiration and guidance from the book  
+## 📚 Inspiration
+This project follows the principles and pipeline design from:
+
 **_Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow_**  
-by **Aurélien Géron**.
+by **Aurélien Géron**
+
+Applied faithfully, not copy-pasted blindly.
+
 ---
 
-📥 Clone the Repository
+## 📥 Clone the Repository
+```bash
 git clone https://github.com/HESleagacy/HESlegacy-California-Housing-API.git
 cd HESlegacy-California-Housing-API
-
-🧪 Create Virtual Environment (Recommended)
-python -m venv venv
-source venv/bin/activate   # Linux / macOS
-# venv\Scripts\activate    # Windows
-
-📦 Install Dependencies
-pip install -r requirements.txt
-
-
-No pickle errors. No mysterious crashes. If this fails, the problem is not the repo.
-
-🚀 Run the FastAPI Server
-uvicorn main:app --reload
-
-
-Server starts in seconds. Production-ready means it actually starts.
-
-🌐 Access the API
-
-Swagger UI:
-👉 http://127.0.0.1:8000/docs
-
-API Endpoint:
-POST /predict
-
-### API Endpoint
-```bash
-POST /predict
-
